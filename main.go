@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	commonpath "github.com/solve-problems/common-path"
+	highestdelay "github.com/solve-problems/highest-delay"
 	"github.com/solve-problems/palindrome"
 	swaptwo "github.com/solve-problems/swap-two"
 )
@@ -38,4 +39,10 @@ func main() {
 	fmt.Println(swaptwo.SwapTwoWithGolang(inputX, inputY))
 	fmt.Println(swaptwo.SwapTwoWithBitwiseXOR(inputX, inputY))
 	fmt.Println()
+
+	// Highest Delay
+	fmt.Println("----------Highest Delay----------")
+	inputKeyDelay := [][]int{{0, 1}, {1, 4}, {3, 5}, {7, 9}}
+	fmt.Println("input:", inputKeyDelay)
+	fmt.Println(highestdelay.HighestDelay(inputKeyDelay))
 }
