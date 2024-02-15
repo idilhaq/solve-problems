@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	arraydiff "github.com/solve-problems/array-diff"
 	commonpath "github.com/solve-problems/common-path"
 	highestdelay "github.com/solve-problems/highest-delay"
 	"github.com/solve-problems/palindrome"
@@ -45,4 +46,11 @@ func main() {
 	inputKeyDelay := [][]int{{0, 1}, {1, 4}, {3, 5}, {7, 9}}
 	fmt.Println("input:", inputKeyDelay)
 	fmt.Println(highestdelay.HighestDelay(inputKeyDelay))
+
+	// Array Diff
+	fmt.Println("----------Array Diff----------")
+	inputArr1 := []int{1, 2, 3}
+	inputArr2 := []int{4, 5, 6}
+	fmt.Println("input:", inputArr1, inputArr2)
+	fmt.Println(arraydiff.ArrayMultiplier(inputArr1, inputArr2, 1))
 }
