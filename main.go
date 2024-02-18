@@ -4,9 +4,11 @@ import (
 	"fmt"
 
 	arraydiff "github.com/solve-problems/array-diff"
+	booyermoremajorityvote "github.com/solve-problems/basic-algorithm/booyer-more-majority-vote"
 	commonpath "github.com/solve-problems/common-path"
 	highestdelay "github.com/solve-problems/highest-delay"
 	"github.com/solve-problems/palindrome"
+	rotatestring "github.com/solve-problems/rotate-string"
 	swaptwo "github.com/solve-problems/swap-two"
 )
 
@@ -53,4 +55,13 @@ func main() {
 	inputArr2 := []int{4, 5, 6}
 	fmt.Println("input:", inputArr1, inputArr2)
 	fmt.Println(arraydiff.ArrayMultiplier(inputArr1, inputArr2, 1))
+
+	// Rotate Strings
+	inputStringRotate := "abcdef"
+	inputStringGoal := "defabc"
+	fmt.Println(rotatestring.RotateString(inputStringRotate, inputStringGoal))
+
+	// Majority Element
+	nums := []int{3, 2, 3, 3, 2, 2, 1}
+	fmt.Println(booyermoremajorityvote.MajorityElements(nums))
 }
